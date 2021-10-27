@@ -1,0 +1,153 @@
+
+RC Pery@DESKTOP-RNL9H7T MINGW64 /e/Tutorials/git_tutorials
+$ touch index.html
+
+RC Pery@DESKTOP-RNL9H7T MINGW64 /e/Tutorials/git_tutorials
+$ touch app.js
+
+RC Pery@DESKTOP-RNL9H7T MINGW64 /e/Tutorials/git_tutorials
+$ git init
+Initialized empty Git repository in E:/Tutorials/git_tutorials/.git/
+
+RC Pery@DESKTOP-RNL9H7T MINGW64 /e/Tutorials/git_tutorials (master)
+$ git config --global user.name 'RC Pery'
+
+RC Pery@DESKTOP-RNL9H7T MINGW64 /e/Tutorials/git_tutorials (master)
+$ git config --global user.email 'iamrcpery@gmail.com'
+
+RC Pery@DESKTOP-RNL9H7T MINGW64 /e/Tutorials/git_tutorials (master)
+$ git add index.html
+
+RC Pery@DESKTOP-RNL9H7T MINGW64 /e/Tutorials/git_tutorials (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        app.js
+
+
+RC Pery@DESKTOP-RNL9H7T MINGW64 /e/Tutorials/git_tutorials (master)
+$ git rm --cached index.html
+rm 'index.html'
+
+RC Pery@DESKTOP-RNL9H7T MINGW64 /e/Tutorials/git_tutorials (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        app.js
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+RC Pery@DESKTOP-RNL9H7T MINGW64 /e/Tutorials/git_tutorials (master)
+$ git add *.html
+
+RC Pery@DESKTOP-RNL9H7T MINGW64 /e/Tutorials/git_tutorials (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        app.js
+
+
+RC Pery@DESKTOP-RNL9H7T MINGW64 /e/Tutorials/git_tutorials (master)
+$ git rm --cached index.html
+rm 'index.html'
+
+RC Pery@DESKTOP-RNL9H7T MINGW64 /e/Tutorials/git_tutorials (master)
+$ git add .
+
+RC Pery@DESKTOP-RNL9H7T MINGW64 /e/Tutorials/git_tutorials (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   app.js
+        new file:   index.html
+
+
+RC Pery@DESKTOP-RNL9H7T MINGW64 /e/Tutorials/git_tutorials (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   app.js
+        new file:   index.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+
+RC Pery@DESKTOP-RNL9H7T MINGW64 /e/Tutorials/git_tutorials (master)
+$ git add .
+
+RC Pery@DESKTOP-RNL9H7T MINGW64 /e/Tutorials/git_tutorials (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   app.js
+        new file:   index.html
+
+
+RC Pery@DESKTOP-RNL9H7T MINGW64 /e/Tutorials/git_tutorials (master)
+$ git commit
+[master (root-commit) 778fa89] Initial commit
+ 2 files changed, 12 insertions(+)
+ create mode 100644 app.js
+ create mode 100644 index.html
+
+RC Pery@DESKTOP-RNL9H7T MINGW64 /e/Tutorials/git_tutorials (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+RC Pery@DESKTOP-RNL9H7T MINGW64 /e/Tutorials/git_tutorials (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   app.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+RC Pery@DESKTOP-RNL9H7T MINGW64 /e/Tutorials/git_tutorials (master)
+$ git add .
+
+RC Pery@DESKTOP-RNL9H7T MINGW64 /e/Tutorials/git_tutorials (master)
+$ git commit -m 'Changed app.js'
+[master ff218ab] Changed app.js
+ 1 file changed, 1 insertion(+)
+
+RC Pery@DESKTOP-RNL9H7T MINGW64 /e/Tutorials/git_tutorials (master)
+$
